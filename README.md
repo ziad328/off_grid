@@ -5,6 +5,8 @@
 
 OffGrid AI is a robust, privacy-first Android application that brings advanced AI photo and video editing directly to your phone. Operating **100% offline**, it utilizes a powerful dual-engine architecture: the **ONNX Runtime** for precise background and object removal, and the **Qualcomm Hexagon NPU** for lightning-fast, zero-throttling image and video enhancement.
 
+> 📖 **Deep Dive:** For full details on the offline AI execution, memory management, and NPU pipeline optimization, please read the [Technical Architecture Guide](technical_architecture.md).
+
 ---
 
 ## 📁 Project Structure
