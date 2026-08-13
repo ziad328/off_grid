@@ -61,30 +61,33 @@ d:\offgrid\
 
 ### 1. Open in Android Studio
 ```
-File → Open → Select d:\offgrid\
+File → Open → Select the project folder
 ```
 
-### 2. Add ONNX Model Files (Required for AI Features)
-
-Place the following model files into:
+### 2. Prepare the AI Models Directory
+Since Git does not track empty folders and the large model files are excluded, you must first create the models directory:
+```bash
+mkdir -p app/src/main/assets/models/
 ```
-app/src/main/assets/models/
-```
 
-| File | Size (approx.) | Download From |
-|---|---|---|
-| `rmbg_14_int8.onnx` | ~45 MB | [briaai/RMBG-1.4](https://huggingface.co/briaai/RMBG-1.4) |
-| `yolov8n_seg_int8.onnx` | ~6 MB | [ultralytics/assets](https://github.com/ultralytics/assets) |
-| `lama_mobile_fp16.onnx` | ~50 MB | [advimman/lama](https://github.com/advimman/lama) |
-| `real_esrgan_general_x4v3.dlc` | ~12 MB | [Qualcomm AI Hub](https://aihub.qualcomm.com/) |
+### 3. Download the Required AI Models
+You must download the following AI models (both ONNX and DLC formats) and place them exactly into the `app/src/main/assets/models/` folder you just created. The app will crash if these files are missing.
 
-> **Note:** Models run 100% locally. Once bundled in assets, no internet is needed.
+| File Name | Format | Size | Purpose | Download Source |
+|---|---|---|---|---|
+| `rmbg_14_int8.onnx` | ONNX | ~45 MB | Background Removal | [briaai/RMBG-1.4](https://huggingface.co/briaai/RMBG-1.4) |
+| `yolov8n_seg_int8.onnx` | ONNX | ~6 MB | Person Detection | [ultralytics/assets](https://github.com/ultralytics/assets) |
+| `lama_mobile_fp16.onnx` | ONNX | ~50 MB | Object Eraser / Inpainting | [advimman/lama](https://github.com/advimman/lama) |
+| **`real_esrgan_general_x4v3.dlc`** | **DLC** | ~12 MB | Video/Image Enhancement (Hexagon NPU) | [Qualcomm AI Hub](https://aihub.qualcomm.com/) |
 
-### 3. Build & Run
+> **Important:** The `.dlc` file is a specialized Deep Learning Container format required by the Qualcomm Hexagon NPU. It must be present for the AI Enhance features to work on Snapdragon devices.
+
+### 4. Build & Run
+Once all 4 models are placed in the `assets/models/` directory, build the project:
 ```bash
 ./gradlew assembleDebug
 ```
-Or press **Run** in Android Studio.
+Or press **Run** directly in Android Studio.
 
 ---
 
