@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">offgridai</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">offgridai</string>
+    <string name="home_pick_file">اختر الملف</string>
+    <string name="home_choose_feature">اختر الميزة</string>
+    <string name="home_process_button">ابدأ المعالجة</string>
+    <string name="home_offline_badge">جميع المعالجات تتم محلياً • بدون إنترنت</string>
+
+    <!-- Media Picker -->
+    <string name="picker_title">اختر صورة أو فيديو</string>
+    <string name="picker_subtitle">الصور والفيديو تُعالج محلياً على جهازك فقط</string>
+    <string name="picker_image">صورة</string>
+    <string name="picker_video">فيديو</string>
+    <string name="picker_image_selected">صورة محددة ✓</string>
+    <string name="picker_video_selected">فيديو محدد ✓</string>
+
+    <!-- AI Features -->
+    <string name="feature_person_removal">إزالة الأشخاص/الأشياء</string>
+    <string name="feature_person_removal_desc">احذف أشخاصاً أو أشياء غير مرغوب فيها مع الحفاظ على الخلفية</string>
+    <string name="feature_bg_removal">إزالة الخلفية</string>
+    <string name="feature_bg_removal_desc">فرّغ الخلفية تماماً وحافظ على الشخص أو الكائن الرئيسي</string>
+    <string name="feature_enhance">تحسين الجودة</string>
+    <string name="feature_enhance_desc">رفع دقة الصور والفيديو وزيادة حدة التفاصيل بالذكاء الاصطناعي</string>
+
+    <!-- Processing Screen -->
+    <string name="processing_init">جارٍ تهيئة نموذج الذكاء الاصطناعي…</string>
+    <string name="processing_analyzing">تحليل محتوى الملف…</string>
+    <string name="processing_running">تشغيل الذكاء الاصطناعي على المعالج العصبي…</string>
+    <string name="processing_inpainting">إعادة بناء الخلفية…</string>
+    <string name="processing_enhancing">تحسين جودة الناتج…</string>
+    <string name="processing_done">اكتملت المعالجة بنجاح ✓</string>
+    <string name="processing_offline_badge">المعالجة على المعالج العصبي • بدون إنترنت</string>
+
+    <!-- Preview Screen -->
+    <string name="preview_title">النتيجة</string>
+    <string name="preview_save">حفظ في المعرض</string>
+    <string name="preview_saved">تم الحفظ ✓</string>
+    <string name="preview_process_another">معالجة ملف آخر</string>
+    <string name="preview_offline_badge">تمت المعالجة محلياً بالكامل — لم تغادر صورتك الجهاز</string>
+    <string name="preview_save_success">تم الحفظ في المعرض بنجاح</string>
+    <string name="preview_save_error">فشل الحفظ، حاول مجدداً</string>
+
+    <!-- Privacy Screen -->
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_hero_title">100% Offline Application</string>
+    <string name="privacy_hero_subtitle">Your media never leaves your device. Ever.</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">AI • 100% Offline</string>
+    <string name="splash_privacy_note">Your media never leaves your device</string>
+
+    <!-- Accessibility -->
+    <string name="cd_back">رجوع</string>
+    <string name="cd_privacy">سياسة الخصوصية</string>
+    <string name="cd_selected">محدد</string>
+    <string name="cd_logo">شعار تطبيق offgridai</string>
+</resources>

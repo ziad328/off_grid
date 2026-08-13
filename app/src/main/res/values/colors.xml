@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- OffGrid AI Brand Colors -->
+    <color name="background">#E6F2F7</color>
+    <color name="primary">#0087BF</color>
+    <color name="text_icon">#80AFED</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_background">#0D2A3A</color>
+    <color name="subtle">#B8D8E8</color>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Config: Block ALL network traffic as defense-in-depth.
+    Even if INTERNET permission were ever accidentally added, no traffic leaves.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- No trusted anchors = no TLS connections allowed -->
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.OffGridAI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <!-- Splash screen background -->
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Splash screen theme (instant display before Compose loads) -->
+    <style name="Theme.OffGridAI.Splash" parent="Theme.OffGridAI">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/background</item>
+    </style>
+</resources>
